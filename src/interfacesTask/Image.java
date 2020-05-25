@@ -1,6 +1,6 @@
 package interfacesTask;
 
-public class Image extends Media {
+public class Image extends Media implements IPrinter {
     String color;
 
     Image (double cost, String author, String date, Type type, String color){
@@ -10,5 +10,11 @@ public class Image extends Media {
 
     public void getColor(){
         System.out.println(color);
+    }
+
+    public void print(AbstractNote.Type type){
+        if (super.messageType == Type.IMAGE){
+            System.out.println(type);
+        }
     }
 }

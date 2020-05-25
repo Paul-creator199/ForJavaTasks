@@ -1,6 +1,6 @@
 package interfacesTask;
 
-public class TextNote extends AbstractNote {
+public class TextNote extends AbstractNote implements IPrinter {
     String topic;
 
     TextNote(String date, String author, Type type, String topic) {
@@ -15,5 +15,11 @@ public class TextNote extends AbstractNote {
     }
     public void getTopic(){
         System.out.println(topic);
+    }
+
+    public void print(AbstractNote.Type type){
+        if (super.messageType == Type.POST || super.messageType == Type.REPOST || super.messageType == Type.COMMENT){
+            System.out.println(type);
+        }
     }
 }
