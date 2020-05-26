@@ -7,7 +7,7 @@ abstract class AbstractNote {
     Type messageType;
 
 
-    AbstractNote(String date, String author,Type type) {
+    AbstractNote(String date, String author, Type type) {
         this.date = date;
         messageType = type;
         this.author = author;
@@ -15,16 +15,16 @@ abstract class AbstractNote {
 
     abstract void getVolume();
 
-   public void getAuthor(String message0){
-       System.out.println(author);
-       }
+    public void getAuthor(String message0) {
+        System.out.println(author);
+    }
 
-    public void getDate(String message1){
-       System.out.println(date);
-   }
+    public void getDate(String message1) {
+        System.out.println(date);
+    }
 
-   public void getMessage(Type t){
-       System.out.println(t);
-   }
+    public void getMessage(Type t) {
+        System.out.println(t);
+    }
 
 }

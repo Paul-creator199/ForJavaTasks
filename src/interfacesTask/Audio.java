@@ -3,17 +3,17 @@ package interfacesTask;
 public class Audio extends Media implements IPlay {
     String volumeOfSound;
 
-    Audio (double cost, String volumeOfSound, Type type, String author, String date){
-        super(cost,type,date,author);
+    Audio(double cost, String volumeOfSound, Type type, String author, String date) {
+        super(cost, type, date, author);
         this.volumeOfSound = volumeOfSound;
     }
 
-    public void getVolumeOfSound(){
+    public void getVolumeOfSound() {
         System.out.println(volumeOfSound);
     }
 
-    public void play(Type type){
-        if (super.messageType == Type.AUDIO){
+    public void play(Type type) {
+        if (super.messageType == Type.AUDIO) {
             System.out.println(type);
         }
     }

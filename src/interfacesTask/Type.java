@@ -1,7 +1,6 @@
 package interfacesTask;
 
-enum Type
-{
+enum Type {
     POST(11),
     REPOST(8),
     COMMENT(2),
@@ -11,7 +10,7 @@ enum Type
 
     public int volumeInMb;
 
-    Type(int volumeInMb){
+    Type(int volumeInMb) {
         this.volumeInMb = volumeInMb;
     }
 }
