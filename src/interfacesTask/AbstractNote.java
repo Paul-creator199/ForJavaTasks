@@ -1,7 +1,5 @@
 package interfacesTask;
 
-import java.lang.reflect.Type;
-import java.util.Arrays;
 
 abstract class AbstractNote {
     String date;
@@ -15,21 +13,6 @@ abstract class AbstractNote {
         this.author = author;
     }
 
-    enum Type
-    {
-        POST(11),
-        REPOST(8),
-        COMMENT(2),
-        IMAGE(3),
-        AUDIO(14),
-        VIDEO(56);
-
-        public int volumeInMb;
-
-        Type(int volumeInMb){
-            this.volumeInMb = volumeInMb;
-            }
-    }
     abstract void getVolume();
 
    public void getAuthor(String message0){

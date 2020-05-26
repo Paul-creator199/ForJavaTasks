@@ -4,7 +4,7 @@ public class Media extends AbstractNote {
     double cost;
 
     Media(double cost, Type type, String date, String author){
-        super(date,author,type);;
+        super(date,author,type);
         this.cost = cost;
     }
     public void getVolume(){
