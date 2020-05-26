@@ -12,7 +12,7 @@ public class Image extends Media implements IPrinter {
         System.out.println(color);
     }
 
-    public void print(AbstractNote.Type type){
+    public void print(Type type){
         if (super.messageType == Type.IMAGE){
             System.out.println(type);
         }

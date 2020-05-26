@@ -12,7 +12,7 @@ public class Video extends Media implements IPlay {
         System.out.println(length);
     }
 
-    public void play(AbstractNote.Type type){
+    public void play(Type type){
         if (super.messageType == Type.VIDEO){
             System.out.println(type);
         }

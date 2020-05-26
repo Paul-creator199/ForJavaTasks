@@ -17,7 +17,7 @@ public class TextNote extends AbstractNote implements IPrinter {
         System.out.println(topic);
     }
 
-    public void print(AbstractNote.Type type){
+    public void print(Type type){
         if (super.messageType == Type.POST || super.messageType == Type.REPOST || super.messageType == Type.COMMENT){
             System.out.println(type);
         }

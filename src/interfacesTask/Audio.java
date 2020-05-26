@@ -12,7 +12,7 @@ public class Audio extends Media implements IPlay {
         System.out.println(volumeOfSound);
     }
 
-    public void play(AbstractNote.Type type){
+    public void play(Type type){
         if (super.messageType == Type.AUDIO){
             System.out.println(type);
         }
